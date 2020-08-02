@@ -61,10 +61,12 @@ public class QuickSort {
 	}
 	public static void sort(int[] arr) {
 		System.out.println("Original Array:"); printArray(arr);
+
 		shuffleArr(arr);
-		
 		System.out.println("Shuffled Array:"); printArray(arr);
+
 		sort(arr, 0, arr.length-1);
+		System.out.println("Sorted Array:"); printArray(arr);
 	}
 	public static void shuffleArr(int[] arr) {
 		Random random = new Random();
