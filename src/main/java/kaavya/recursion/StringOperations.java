@@ -8,13 +8,13 @@ import java.util.LinkedHashMap;
 public class StringOperations {
 
 	public static void main(String[] args) {
-		String s = "ABCD";
+		String s = "ABC";
 		StringOperations mystr = new StringOperations();
 		//System.out.print("C".substring(0)); 
 		//System.out.print("Kabvya".substring(5));
 		
 		
-		//printPermutation("", s);
+		printPermutation("", s);
 		//System.out.println("Reverse of " + "sumithra is:" +  mystr.stringReverse("sumithra"));
 				
 		//recursion
@@ -28,7 +28,9 @@ public class StringOperations {
 	    
 	    //System.out.println("Kth non repeating char is: " + mystr.findNonRepeatedChar2("kaavya", 3));
 	    
-	    mystr.findSubstrings("Kaavya");
+	    //mystr.findSubstrings("Kaavya");
+		
+
 	}
 	/* Start with the entire string as unfixed. Move the first char to fixed part and permuatate the remaining char
 	 * in the unfixed part. 
@@ -42,7 +44,7 @@ public class StringOperations {
 		
 		for (int i = 0; i < unfixed.length() ; i++) {
 			String newfixed = fixed + unfixed.charAt(i); //add first char to the already present fixed part
-			String newunfixed = unfixed.substring(0, i) + unfixed.substring(i+1); // compute the unfixed by copying the remaining letters in front and back of the char which jutsmoved to the fixed part 
+			String newunfixed = unfixed.substring(0, i) + unfixed.substring(i+1); // compute the unfixed by copying the remaining letters in front and back of the char which just got moved to the fixed part 
 			printPermutation(newfixed, newunfixed); //recursively call the permutations to move more unfixed to fixed
 		}
 	}
