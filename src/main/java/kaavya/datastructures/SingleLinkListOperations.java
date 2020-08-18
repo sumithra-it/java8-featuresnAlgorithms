@@ -42,7 +42,7 @@ public class SingleLinkListOperations {
 		return newnode;
 	}
 	
-	static Node addToHead(Node newNode){//adds to head
+	public static Node addToHead(Node newNode){//adds to head
 		newNode.next = head;
 		head = newNode;
 		return head;
@@ -54,7 +54,7 @@ public class SingleLinkListOperations {
 		return curr;
 	}
 	
-	public void printAll(Node headNode) {
+	public static void printAll(Node headNode) {
 		Node curr = headNode;
 		System.out.println("\n");
 		while((curr.next != null) ) {

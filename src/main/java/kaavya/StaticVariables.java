@@ -1,5 +1,8 @@
 package kaavya;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class StaticVariables {
 
 		   public static void main(String args[]){
@@ -9,6 +12,14 @@ public class StaticVariables {
 		     s2.showData();
 		     Student.b++;
 		     s1.showData();
+		     
+		     ArrayList<Integer> maxelements = new ArrayList<>();
+		      maxelements.add(2);maxelements.add(1);maxelements.add(7);maxelements.add(4);maxelements.add(2);
+		      System.out.print("\nmaxelements:");
+		      maxelements.forEach((p)-> System.out.print(p));
+		      
+		      int max = Collections.max(maxelements);
+		      System.out.print("\nMax candy:" + max);
 		  }
 		}
 

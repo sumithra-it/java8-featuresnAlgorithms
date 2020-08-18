@@ -35,8 +35,8 @@ public class MergeSort2 {
 	
 	public static void main(String[] args) {
 
-		//int[] arr = {33, 11,12,10,14,13,9,7, 4, 8, 15, 1, 3, 6,20, 30, 22, 29, 28};
-		int[] arr = { 4, 3, 2, 1,6,5};
+		int[] arr = {33, 11,12,10,14,13,9,7, 4, 8, 15, 1, 3, 6,20, 30, 22, 29, 28};
+		//int[] arr = { 4, 3, 2, 1,6,5};
 		System.out.println("Length of array is: " + arr.length);
 
 		//sort each halves
